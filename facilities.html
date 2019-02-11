@@ -57,7 +57,10 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
   <!-- Main styles -->
   <link rel="stylesheet" href="res/css/main.css">
   <link rel="stylesheet" href="res/css/style.css">
-
+  <link href="res/css/prettyPhoto.css" rel="stylesheet">
+  <link href="res/css/pe-icons.css" rel="stylesheet">
+  <link href="res/css/animate.css" rel="stylesheet">
+  <script src="res/js/jquery.js"></script>
   <!-- Color skin -->
   <link rel="stylesheet" href="res/css/color_red.css">
 
@@ -65,6 +68,39 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
   <!--[if lt IE 8]>
   <script src="../res/js/modernizr.min.js"></script>
   <![endif]-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+    </script>
+
+
 </head>
 
 <body id="page-top">
@@ -353,6 +389,54 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
             <!-- //Features Box Style v3 End -->
           </div>
 
+
+          <h3 class="font-family-alt font-weight-700 letter-spacing-1 xs-title-small title-medium">
+            Accommodation and 
+          </h3>
+          <div class="row xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl">
+            <!-- Features Box Style v3 Start -->
+            <div class="features-box col-sm-4">
+              <div class="border border-gray-light border-round box-shadow-yes position-relative">
+                <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                  <div class="display-table-cell no-padding-tb padding-0 text-center">
+                    <img src="./res/images/machine1.jpeg" alt="THC">
+                  </div>
+                  <!-- //.display-table-cell -->
+                </div>
+                <!-- //.display-table -->
+              </div>
+              <!-- //.border -->
+            </div>
+            <!-- //Features Box Style v3 End -->
+            <!-- Features Box Style v3 Start -->
+            <div class="features-box col-sm-4">
+              <div class="border border-gray-light border-round box-shadow-yes position-relative">
+                <div class="display-table height-100 no-padding-rl padding-7 width-100">
+                  <div class="display-table-cell no-padding-tb padding-0 text-center">
+                    <img src="./res/images/machine2.jpeg" alt="THC">
+                  </div>
+                  <!-- //.display-table-cell -->
+                </div>
+                <!-- //.display-table -->
+              </div>
+              <!-- //.border -->
+            </div>
+
+            <div class="features-box col-sm-4">
+              <div class="border border-gray-light border-round box-shadow-yes position-relative">
+                <div class="display-table height-100 no-padding-rl padding-8 width-100">
+                  <div class="display-table-cell no-padding-tb padding-0 text-center">
+                    <img src="./res/images/machine3.jpeg" alt="THC">
+                  </div>
+                  <!-- //.display-table-cell -->
+                </div>
+                <!-- //.display-table -->
+              </div>
+              <!-- //.border -->
+            </div>
+            <!-- //Features Box Style v3 End -->
+          </div>
+
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
           <h3 class="display-block font-weight-300 letter-spacing-1 xs-title-small title-large">
@@ -389,6 +473,74 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
     <!-- //.container -->
   </section>
   <!-- //Section - Alumni End -->
+
+<div class="container">
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+
+        <div align="center">
+            <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>
+        <br/>
+
+
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</section>
 
   <!-- Footer Start -->
   <footer class="footer bg-white">
@@ -430,34 +582,34 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
 
 
   <!-- jQuery -->
-  <script src="../res/js/jquery.min.js"></script>
+  <script src="res/js/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <script src="../res/js/bootstrap.min.js"></script>
+  <script src="res/js/bootstrap.min.js"></script>
 
   <!-- Plugins -->
-  <script src="../res/js/pace.min.js"></script>
-  <script src="../res/js/debouncer.min.js"></script>
-  <script src="../res/js/jquery.easing.min.js"></script>
-  <script src="../res/js/jquery.inview.min.js"></script>
-  <script src="../res/js/jquery.matchHeight.js"></script>
-  <script src="../res/js/isotope.pkgd.min.js"></script>
-  <script src="../res/js/imagesloaded.pkgd.min.js"></script>
-  <script src="../res/js/flickity.pkgd.min.js"></script>
-  <script src="../res/js/jquery.magnific-popup.min.js"></script>
-  <script src="../res/js/jquery.validate.min.js"></script>
+  <script src="res/js/pace.min.js"></script>
+  <script src="res/js/debouncer.min.js"></script>
+  <script src="res/js/jquery.easing.min.js"></script>
+  <script src="res/js/jquery.inview.min.js"></script>
+  <script src="res/js/jquery.matchHeight.js"></script>
+  <script src="res/js/isotope.pkgd.min.js"></script>
+  <script src="res/js/imagesloaded.pkgd.min.js"></script>
+  <script src="res/js/flickity.pkgd.min.js"></script>
+  <script src="res/js/jquery.magnific-popup.min.js"></script>
+  <script src="res/js/jquery.validate.min.js"></script>
 
   <!-- BG Parallax JS -->
-  <script src="../res/js/TweenMax.min.js"></script>
-  <script src="../res/js/ScrollMagic.min.js"></script>
-  <script src="../res/js/animation.gsap.min.js"></script>
+  <script src="res/js/TweenMax.min.js"></script>
+  <script src="res/js/ScrollMagic.min.js"></script>
+  <script src="res/js/animation.gsap.min.js"></script>
 
   <!-- Theme -->
-  <script src="../res/js/main.js"></script>
+  <script src="res/js/main.js"></script>
 
   <!-- Countdown -->
-  <script src="../res/js/jquery.countdown.min.js"></script>
-  <script src="../res/js/countdown.js"></script>
+  <script src="res/js/jquery.countdown.min.js"></script>
+  <script src="res/js/countdown.js"></script>
 
 </body>
 
