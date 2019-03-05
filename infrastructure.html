@@ -1,0 +1,394 @@
+<!--
+ _____ _____ ____          _ __  __ ___
+|_   _| ____|  _ \__  __  | |  \/  |_ _|
+  | | |  _| | | | \ \/ /  | | |\/| || |
+  | | | |___| |_| |>  < |_| | |  | || |
+  |_| |_____|____//_/\_\___/|_|  |_|___|
+
+Event website by Syed Faheel Ahmad (github.com/faheel)
+-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title, icon, description and keywords -->
+  <title>Our Infrastructure</title>
+  <link rel="shortcut icon" href="res/images/Sebore Logo.ico">
+  <meta name="description" content="Sebore Farms Export Processing Zone.">
+  <meta name="keywords" content="Farm, Sebore, Mayo Belwa, Nigeria, EPZ, Customs, Export">
+
+  <!-- Social media tags -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="SeboreFarms">
+  <meta property="og:description" content="Sebore Farms Export Processing Zone.">
+  <meta property="og:image" content="https://sebore-epz.com.com/res/images/logos/light-social.jpg">
+  <meta property="og:url" content="https://sebore-epz.com">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@Sebore_farms">
+  <!-- Google+ -->
+  <meta itemprop="name" content="SeboreFarms">
+  <meta itemprop="description" content="Sebore Farms Export Processing Zone.">
+  <meta itemprop="image" content="https://sebore-epz.com/res/images/logos/light-social.jpg">
+
+  <!-- Browser themes -->
+  <meta name="theme-color" content="#000">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="res/css/bootstrap.min.css">
+
+  <!-- Font Icons -->
+  <link rel="stylesheet" href="res/css/font-awesome.min.css">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="res/css/flickity.min.css">
+  <link rel="stylesheet" href="res/css/magnific-popup.css">
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="res/css/main.css">
+  <link rel="stylesheet" href="res/css/style.css">
+  <link href="res/css/prettyPhoto.css" rel="stylesheet">
+  <link href="res/css/pe-icons.css" rel="stylesheet">
+  <link href="res/css/animate.css" rel="stylesheet">
+  <script src="res/js/jquery.js"></script>
+  <!-- Color skin -->
+  <link rel="stylesheet" href="res/css/color_red.css">
+
+  <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 8]>
+  <script src="../res/js/modernizr.min.js"></script>
+  <![endif]-->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+
+});
+    </script>
+
+
+</head>
+
+<body id="page-top">
+  <!-- Navigation Start -->
+  <nav id="navigation" class="navbar navbar-fixed-top bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header col-lg-3">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand font-family-alt letter-spacing-1 text-extra-large text-uppercase page-scroll" href="index.html#home-bg-slideshow">
+            <img class="logo-navbar-dark" src="res/images/Sebore Logo.png" alt="SeboreFarms" href="#home-bg-slideshow"/>
+            <img class="logo-navbar-white" src="res/images/Sebore Logo.png" alt="SeboreFarms" href="#home-bg-slideshow"/>
+          </a>
+        </div>
+        <!-- //.navbar-header -->
+
+        <div id="navbar" class="navbar-collapse collapse col-lg-9 pull-right bg-white">
+          <ul class="nav navbar-nav font-family-alt letter-spacing-1 text-uppercase font-weight-700">
+            <li><a href="index.html#about" class="text-black">About</a></li>
+            <li><a href="index.html#venue" class="line-height-unset text-black">Location</a></li>
+            <li><a href="facilities.html" class="page-scroll line-height-unset text-black">Gallery</a></li>
+            <li><a href="#facilities" class="page-scroll line-height-unset text-black">Infrastructure</a></li>
+            <li class="bg-green">
+              <a href="contact.html" class="line-height-unset width-100">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- //.navbar-collapse -->
+      </div>
+      <!-- //.row -->
+    </div>
+    <!-- //.container -->
+  </nav>
+  <!-- //Navigation End -->
+
+
+
+
+  <section class="about-us-wrap section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+        <br> -->
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <div class="about-content-block">
+              <h1 class="gallery-title">Water Dam</h1>
+              <p> Two dams have been completed as the transitional measure to supply water for the investors in the Zone. The construction of a permanent water treatment plant a with daily capacity of thousands of gallons of purified water is now in progress.</p>
+            </div>
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <img class="logo-navbar-dark" src="res/images/dam.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+      </div><!-- /.row -->
+
+      <div class="row">
+        <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+        <br> -->
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <div class="about-content-block">
+              <h1 class="gallery-title">Safety and Security</h1>
+              <p> </p>
+            </div>
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <img class="logo-navbar-dark" src="res/images/safety.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+      </div><!-- /.row -->
+
+
+
+      <div class="row">
+        <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+        <br> -->
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <div class="about-content-block">
+              <h1 class="gallery-title">Customs Processing center (CPC)</h1>
+              <p> </p>
+            </div>
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+        <div class="col-sm-6 col-xs-12">
+          <div class="about-us-content capabilities">
+            <img class="logo-navbar-dark" src="res/images/dam.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+          </div><!-- /about-us-content -->
+        </div><!--/.col-->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+
+
+    <div class="row">
+      <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+      <br> -->
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <div class="about-content-block">
+            <h1 class="gallery-title">Warehoses</h1>
+            <p> </p>
+          </div>
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <img class="logo-navbar-dark" src="res/images/workshop.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+    </div><!-- /.row -->
+
+    <div class="row">
+      <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+      <br> -->
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <div class="about-content-block">
+            <h1 class="gallery-title">Yoghurt and Juice Factories</h1>
+            <p> </p>
+          </div>
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <img class="logo-navbar-dark" src="res/images/dam.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+    </div><!-- /.row -->
+
+
+
+    <div class="row">
+      <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+      <br> -->
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <div class="about-content-block">
+            <h1 class="gallery-title">Waste Management Plant</h1>
+            <p> </p>
+          </div>
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <img class="logo-navbar-dark" src="res/images/dam.jpg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+    </div><!-- /.row -->
+
+    <div class="row">
+      <!-- <h2 class="font-family-alt font-weight-700 sm-title-large title-extra-large-2 text-gray-dark-2">Activities approved at the EPZ</h2>
+      <br> -->
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <div class="about-content-block">
+            <h1 class="gallery-title">Livestock Pens and scales</h1>
+            <p> </p>
+          </div>
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+      <div class="col-sm-6 col-xs-12">
+        <div class="about-us-content capabilities">
+          <img class="logo-navbar-dark" src="res/images/cattlepens7.jpeg" alt="SeboreFarms" href="#home-bg-slideshow" height="450px" width="380px"/>
+
+
+        </div><!-- /about-us-content -->
+      </div><!--/.col-->
+
+    </div><!-- /.row -->
+
+</section>
+
+  <!-- Footer Start -->
+  <footer class="footer bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="footer-logo xs-text-center">
+            <img src="../res/images/logos/light.png" alt="">
+          </div>
+          <!-- //.footer-logo -->
+          <p class="disclaimer xs-text-center">
+            Sebore Farms
+          </p>
+          <!-- //.disclaimer -->
+        </div>
+        <!-- //.col-sm-4 -->
+
+        <div class="col-sm-8">
+          <div class="footer-social text-right">
+            <ul class="list-inline list-unstyled no-margin xs-text-center xs-title-small title-medium">
+              <li><a href="https://www.facebook.com/tedxjmi/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/TEDx_JMI"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/tedxjmi/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          <!-- //.footer-social -->
+        </div>
+        <!-- //.col-sm-8 -->
+      </div>
+      <!-- //.row -->
+    </div>
+    <!-- //.container -->
+  </footer>
+  <!-- //Footer End -->
+
+
+  <!-- Scroll to top -->
+  <a href="#page-top" class="page-scroll scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+  <!-- jQuery -->
+  <script src="res/js/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="res/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="res/js/pace.min.js"></script>
+  <script src="res/js/debouncer.min.js"></script>
+  <script src="res/js/jquery.easing.min.js"></script>
+  <script src="res/js/jquery.inview.min.js"></script>
+  <script src="res/js/jquery.matchHeight.js"></script>
+  <script src="res/js/isotope.pkgd.min.js"></script>
+  <script src="res/js/imagesloaded.pkgd.min.js"></script>
+  <script src="res/js/flickity.pkgd.min.js"></script>
+  <script src="res/js/jquery.magnific-popup.min.js"></script>
+  <script src="res/js/jquery.validate.min.js"></script>
+
+  <!-- BG Parallax JS -->
+  <script src="res/js/TweenMax.min.js"></script>
+  <script src="res/js/ScrollMagic.min.js"></script>
+  <script src="res/js/animation.gsap.min.js"></script>
+
+  <!-- Theme -->
+  <script src="res/js/main.js"></script>
+
+  <!-- Countdown -->
+  <script src="res/js/jquery.countdown.min.js"></script>
+  <script src="res/js/countdown.js"></script>
+
+</body>
+
+</html>

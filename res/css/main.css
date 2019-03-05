@@ -52,7 +52,8 @@ a:focus {
 
 img {
   height: auto;
-  max-width: 100%
+  max-width: 100%;
+  padding:10px;
 }
 
 video {
@@ -4794,7 +4795,7 @@ section.pull-up {
 
 @media (min-width:992px) {
   section {
-    padding-top: 33px;
+    /* padding-top: 33px; */
     padding-bottom: 80px;
   }
   section.pull-up {
