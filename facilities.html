@@ -76,7 +76,7 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
 
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
-        
+
         if(value == "all")
         {
             //$('.filter').removeClass('hidden');
@@ -88,10 +88,10 @@ Event website by Syed Faheel Ahmad (github.com/faheel)
 //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".filter").not('.'+value).hide('3000');
             $('.filter').filter('.'+value).show('3000');
-            
+
         }
     });
-    
+
     if ($(".filter-button").removeClass("active")) {
 $(this).removeClass("active");
 }
@@ -128,6 +128,7 @@ $(this).addClass("active");
             <li><a href="index.html#about" class="text-black">About</a></li>
             <li><a href="index.html#venue" class="line-height-unset text-black">Location</a></li>
             <li><a href="#facilities" class="page-scroll line-height-unset text-black">Gallery</a></li>
+            <li><a href="infrastructure.html" class="page-scroll line-height-unset text-black">Infrastructure</a></li>
             <li class="bg-green">
               <a href="contact.html" class="line-height-unset width-100">
                 Contact Us
@@ -391,7 +392,7 @@ $(this).addClass("active");
 
 
           <h3 class="font-family-alt font-weight-700 letter-spacing-1 xs-title-small title-medium">
-            Accommodation and 
+            Accommodation and
           </h3>
           <div class="row xs-margin-6 xs-no-margin-rl margin-3 no-margin-rl">
             <!-- Features Box Style v3 Start -->
