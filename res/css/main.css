@@ -1850,7 +1850,7 @@ h6 {
 .navbar .navbar-nav>li.active>a:before,
 .navbar .navbar-toggle .icon-bar,
 .navbar.navbar-white.shrink {
-  background-color: #fff
+  background-color: #757575
 }
 
 .navbar .navbar-brand,
@@ -1893,9 +1893,8 @@ h6 {
 
 .navbar .navbar-brand img {
   display: inline-block;
-  max-height: 43px;
+  max-height: 90px;
   position: absolute;
-  top: 18px;
   left: auto
 }
 
@@ -4775,8 +4774,8 @@ section.pull-up {
     line-height: 60px!important
   }
   .navbar.shrink .navbar-brand img {
-    max-height: 38px;
-    top: 9px
+    max-height: 72px;
+    top: 0px
   }
   .navbar.shrink .navbar-nav>li {
     line-height: 60px!important
